@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI Blend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h1>AI Blend</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html" class="active">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="/workflow-builder.html">
+                    <i class="fas fa-project-diagram"></i>
+                    Workflows
+                </a>
+                <a href="/credentials.html">
+                    <i class="fas fa-key"></i>
+                    Credentials
+                </a>
+                <a href="/executions.html">
+                    <i class="fas fa-play-circle"></i>
+                    Executions
+                </a>
+                <a href="/templates.html">
+                    <i class="fas fa-file-alt"></i>
+                    Templates
+                </a>
+                <a href="/community.html">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Top Bar -->
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="header-right">
+                    <button class="create-workflow-btn">
+                        <i class="fas fa-plus"></i>
+                        Create Workflow
+                    </button>
+                </div>
+            </header>
+
+            <!-- Stats Overview -->
+            <section class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Active Workflows</h3>
+                        <p class="stat-value">12</p>
+                        <p class="stat-change positive">+2 this week</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Executions</h3>
+                        <p class="stat-value">1,234</p>
+                        <p class="stat-change positive">+15% this month</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>API Credits</h3>
+                        <p class="stat-value">$1,500</p>
+                        <p class="stat-change negative">-5% this month</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Community Members</h3>
+                        <p class="stat-value">5,678</p>
+                        <p class="stat-change positive">+10% this month</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="recent-activity">
+                <div class="section-header">
+                    <h3>Recent Activity</h3>
+                    <a href="/executions.html" class="view-all">View All</a>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Workflow "Content Generator" completed</h4>
+                            <p>Generated 10 blog posts using GPT-4 and Stable Diffusion</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>API Rate Limit Warning</h4>
+                            <p>OpenAI API approaching rate limit (85% used)</p>
+                            <span class="activity-time">4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon info">
+                            <i class="fas fa-info"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>New Template Available</h4>
+                            <p>"Customer Support Bot" template added to marketplace</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <div class="section-header">
+                    <h3>Quick Actions</h3>
+                </div>
+                <div class="action-grid">
+                    <button class="action-btn">
+                        <i class="fas fa-plus"></i>
+                        Create New Workflow
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-upload"></i>
+                        Import Template
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-key"></i>
+                        Add API Key
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-share-alt"></i>
+                        Share Workflow
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html> 

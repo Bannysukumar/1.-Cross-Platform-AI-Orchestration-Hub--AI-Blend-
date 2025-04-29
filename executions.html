@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executions - AI Blend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="workflow-builder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="workflow-builder">
+        <!-- Sidebar -->
+        <aside class="builder-sidebar">
+            <div class="sidebar-header">
+                <h1>AI Blend</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="/workflow-builder.html">
+                    <i class="fas fa-project-diagram"></i>
+                    Workflows
+                </a>
+                <a href="/credentials.html">
+                    <i class="fas fa-key"></i>
+                    Credentials
+                </a>
+                <a href="/executions.html" class="active">
+                    <i class="fas fa-play-circle"></i>
+                    Executions
+                </a>
+                <a href="/templates.html">
+                    <i class="fas fa-file-alt"></i>
+                    Templates
+                </a>
+                <a href="/community.html">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="builder-content">
+            <!-- Top Bar -->
+            <header class="builder-header">
+                <div class="header-left">
+                    <h2>Execution History</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search executions...">
+                    </div>
+                    <div class="filter-dropdown">
+                        <select>
+                            <option value="all">All Status</option>
+                            <option value="completed">Completed</option>
+                            <option value="running">Running</option>
+                            <option value="failed">Failed</option>
+                            <option value="queued">Queued</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Executions Table -->
+            <div class="executions-container">
+                <table class="executions-table">
+                    <thead>
+                        <tr>
+                            <th>Workflow</th>
+                            <th>Status</th>
+                            <th>Started</th>
+                            <th>Duration</th>
+                            <th>Cost</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example execution rows -->
+                        <tr>
+                            <td>
+                                <div class="workflow-info">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>Content Generation Workflow</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status-badge completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    Completed
+                                </span>
+                            </td>
+                            <td>2024-03-15 14:30</td>
+                            <td>2m 45s</td>
+                            <td>$0.12</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="view-btn" title="View Details">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="download-btn" title="Download Results">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="delete-btn" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="workflow-info">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>Image Processing Pipeline</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status-badge running">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Running
+                                </span>
+                            </td>
+                            <td>2024-03-15 15:45</td>
+                            <td>1m 30s</td>
+                            <td>$0.08</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="view-btn" title="View Details">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="stop-btn" title="Stop Execution">
+                                        <i class="fas fa-stop"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="workflow-info">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>Data Analysis Workflow</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="status-badge failed">
+                                    <i class="fas fa-times-circle"></i>
+                                    Failed
+                                </span>
+                            </td>
+                            <td>2024-03-15 13:20</td>
+                            <td>0m 45s</td>
+                            <td>$0.05</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="view-btn" title="View Details">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="retry-btn" title="Retry">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
+                                    <button class="delete-btn" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span class="page-info">Page 1 of 5</span>
+                    <button class="pagination-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Add event listeners for interactive elements
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search functionality
+            const searchInput = document.querySelector('.search-box input');
+            searchInput.addEventListener('input', (e) => {
+                // Implement search logic
+                console.log('Searching for:', e.target.value);
+            });
+
+            // Filter functionality
+            const filterSelect = document.querySelector('.filter-dropdown select');
+            filterSelect.addEventListener('change', (e) => {
+                // Implement filter logic
+                console.log('Filtering by:', e.target.value);
+            });
+
+            // Action buttons
+            document.querySelectorAll('.action-buttons button').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const action = e.currentTarget.classList[0];
+                    const row = e.currentTarget.closest('tr');
+                    const workflowName = row.querySelector('.workflow-info span').textContent;
+                    
+                    switch(action) {
+                        case 'view-btn':
+                            // Implement view details logic
+                            console.log('Viewing details for:', workflowName);
+                            break;
+                        case 'download-btn':
+                            // Implement download logic
+                            console.log('Downloading results for:', workflowName);
+                            break;
+                        case 'delete-btn':
+                            // Implement delete logic
+                            console.log('Deleting execution for:', workflowName);
+                            break;
+                        case 'stop-btn':
+                            // Implement stop logic
+                            console.log('Stopping execution for:', workflowName);
+                            break;
+                        case 'retry-btn':
+                            // Implement retry logic
+                            console.log('Retrying execution for:', workflowName);
+                            break;
+                    }
+                });
+            });
+
+            // Pagination
+            document.querySelectorAll('.pagination-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    // Implement pagination logic
+                    console.log('Navigating to page');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

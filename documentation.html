@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - AI Blend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <h1>AI Blend</h1>
+            </div>
+            <div class="nav-links">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="demo.html">Demo</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <main class="page-content">
+            <section class="docs-header">
+                <h1>Documentation</h1>
+                <p>Comprehensive guides and resources for using AI Blend</p>
+            </section>
+
+            <div class="docs-container">
+                <aside class="docs-sidebar">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search documentation...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <nav class="docs-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#quick-start">Quick Start Guide</a></li>
+                            <li><a href="#installation">Installation</a></li>
+                        </ul>
+
+                        <h3>Core Features</h3>
+                        <ul>
+                            <li><a href="#workflow-builder">Workflow Builder</a></li>
+                            <li><a href="#ai-integration">AI Model Integration</a></li>
+                            <li><a href="#analytics">Analytics & Monitoring</a></li>
+                        </ul>
+
+                        <h3>API Reference</h3>
+                        <ul>
+                            <li><a href="#authentication">Authentication</a></li>
+                            <li><a href="#endpoints">API Endpoints</a></li>
+                            <li><a href="#webhooks">Webhooks</a></li>
+                        </ul>
+
+                        <h3>Guides</h3>
+                        <ul>
+                            <li><a href="#best-practices">Best Practices</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li><a href="#security">Security</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <article class="docs-content">
+                    <section id="introduction" class="docs-section">
+                        <h2>Introduction</h2>
+                        <p>Welcome to the AI Blend documentation. This guide will help you understand and use our platform effectively.</p>
+                        <div class="docs-card">
+                            <h3>What is AI Blend?</h3>
+                            <p>AI Blend is a powerful platform for orchestrating and managing AI workflows across multiple models and services.</p>
+                        </div>
+                    </section>
+
+                    <section id="quick-start" class="docs-section">
+                        <h2>Quick Start Guide</h2>
+                        <div class="docs-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Create an Account</h3>
+                                    <p>Sign up for a free account to get started.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Set Up Your First Workflow</h3>
+                                    <p>Use our intuitive workflow builder to create your first AI workflow.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Integrate AI Models</h3>
+                                    <p>Connect your preferred AI models and services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="workflow-builder" class="docs-section">
+                        <h2>Workflow Builder</h2>
+                        <div class="docs-card">
+                            <h3>Creating Workflows</h3>
+                            <p>Learn how to create and manage AI workflows using our visual builder.</p>
+                            <div class="code-block">
+                                <pre><code>// Example workflow configuration
+{
+    "name": "Content Generation",
+    "steps": [
+        {
+            "type": "text_generation",
+            "model": "gpt-4",
+            "prompt": "Generate creative content"
+        },
+        {
+            "type": "image_generation",
+            "model": "dall-e",
+            "prompt": "Create matching image"
+        }
+    ]
+}</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="api-reference" class="docs-section">
+                        <h2>API Reference</h2>
+                        <div class="docs-card">
+                            <h3>Authentication</h3>
+                            <p>All API requests require authentication using your API key.</p>
+                            <div class="code-block">
+                                <pre><code>curl -X GET "https://api.aiblend.com/v1/workflows" \
+     -H "Authorization: Bearer YOUR_API_KEY"</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="docs-feedback">
+                        <h2>Was this helpful?</h2>
+                        <div class="feedback-buttons">
+                            <button class="btn btn-outline"><i class="fas fa-thumbs-up"></i> Yes</button>
+                            <button class="btn btn-outline"><i class="fas fa-thumbs-down"></i> No</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Blend</h3>
+                    <p>Empowering businesses with AI orchestration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="features.html">Features</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="demo.html">Demo</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="documentation.html">Documentation</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="support.html">Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Blend. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html> 

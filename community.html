@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - AI Blend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="workflow-builder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="workflow-builder">
+        <!-- Sidebar -->
+        <aside class="builder-sidebar">
+            <div class="sidebar-header">
+                <h1>AI Blend</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="/workflow-builder.html">
+                    <i class="fas fa-project-diagram"></i>
+                    Workflows
+                </a>
+                <a href="/credentials.html">
+                    <i class="fas fa-key"></i>
+                    Credentials
+                </a>
+                <a href="/executions.html">
+                    <i class="fas fa-play-circle"></i>
+                    Executions
+                </a>
+                <a href="/templates.html">
+                    <i class="fas fa-file-alt"></i>
+                    Templates
+                </a>
+                <a href="/community.html" class="active">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="builder-content">
+            <!-- Top Bar -->
+            <header class="builder-header">
+                <div class="header-left">
+                    <h2>Community Hub</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search community...">
+                    </div>
+                    <button class="create-post-btn">
+                        <i class="fas fa-plus"></i>
+                        Create Post
+                    </button>
+                </div>
+            </header>
+
+            <!-- Community Content -->
+            <div class="community-container">
+                <!-- Featured Workflows -->
+                <section class="community-section">
+                    <div class="section-header">
+                        <h3>Featured Workflows</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="workflows-grid">
+                        <div class="workflow-card">
+                            <div class="workflow-header">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                <div class="workflow-info">
+                                    <h4>Advanced Image Generation</h4>
+                                    <span class="author">by @creative_ai</span>
+                                </div>
+                            </div>
+                            <div class="workflow-description">
+                                A powerful workflow combining DALL-E and Stable Diffusion for professional-grade image generation.
+                            </div>
+                            <div class="workflow-stats">
+                                <span><i class="fas fa-heart"></i> 245</span>
+                                <span><i class="fas fa-comment"></i> 56</span>
+                                <span><i class="fas fa-share"></i> 32</span>
+                            </div>
+                        </div>
+
+                        <div class="workflow-card">
+                            <div class="workflow-header">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                <div class="workflow-info">
+                                    <h4>Content Marketing Suite</h4>
+                                    <span class="author">by @marketing_pro</span>
+                                </div>
+                            </div>
+                            <div class="workflow-description">
+                                Generate blog posts, social media content, and email campaigns using multiple AI models.
+                            </div>
+                            <div class="workflow-stats">
+                                <span><i class="fas fa-heart"></i> 189</span>
+                                <span><i class="fas fa-comment"></i> 42</span>
+                                <span><i class="fas fa-share"></i> 28</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Discussions -->
+                <section class="community-section">
+                    <div class="section-header">
+                        <h3>Recent Discussions</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="discussions-list">
+                        <div class="discussion-card">
+                            <div class="discussion-header">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                <div class="discussion-info">
+                                    <h4>Best practices for prompt engineering?</h4>
+                                    <span class="meta">Posted by @ai_enthusiast • 2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="discussion-content">
+                                Looking for tips on improving prompt engineering for better AI outputs. Any recommended resources or techniques?
+                            </div>
+                            <div class="discussion-stats">
+                                <span><i class="fas fa-comment"></i> 24 replies</span>
+                                <span><i class="fas fa-eye"></i> 156 views</span>
+                            </div>
+                        </div>
+
+                        <div class="discussion-card">
+                            <div class="discussion-header">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                <div class="discussion-info">
+                                    <h4>Integrating custom models with AI Blend</h4>
+                                    <span class="meta">Posted by @developer • 5 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="discussion-content">
+                                Has anyone successfully integrated their own fine-tuned models with AI Blend? Looking for guidance on the process.
+                            </div>
+                            <div class="discussion-stats">
+                                <span><i class="fas fa-comment"></i> 18 replies</span>
+                                <span><i class="fas fa-eye"></i> 203 views</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Top Contributors -->
+                <section class="community-section">
+                    <div class="section-header">
+                        <h3>Top Contributors</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="contributors-list">
+                        <div class="contributor-card">
+                            <img src="https://via.placeholder.com/60" alt="User Avatar" class="user-avatar large">
+                            <div class="contributor-info">
+                                <h4>@ai_expert</h4>
+                                <span class="role">AI Researcher</span>
+                                <div class="contributor-stats">
+                                    <span><i class="fas fa-star"></i> 45 workflows</span>
+                                    <span><i class="fas fa-comment"></i> 128 posts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contributor-card">
+                            <img src="https://via.placeholder.com/60" alt="User Avatar" class="user-avatar large">
+                            <div class="contributor-info">
+                                <h4>@creative_dev</h4>
+                                <span class="role">Creative Developer</span>
+                                <div class="contributor-stats">
+                                    <span><i class="fas fa-star"></i> 32 workflows</span>
+                                    <span><i class="fas fa-comment"></i> 95 posts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search functionality
+            const searchInput = document.querySelector('.search-box input');
+            searchInput.addEventListener('input', (e) => {
+                // Implement search logic
+                console.log('Searching for:', e.target.value);
+            });
+
+            // Create post button
+            const createPostBtn = document.querySelector('.create-post-btn');
+            createPostBtn.addEventListener('click', () => {
+                // Implement create post logic
+                console.log('Creating new post');
+            });
+
+            // Workflow cards
+            document.querySelectorAll('.workflow-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('.workflow-stats')) {
+                        const workflowName = card.querySelector('h4').textContent;
+                        console.log('Viewing workflow:', workflowName);
+                    }
+                });
+            });
+
+            // Discussion cards
+            document.querySelectorAll('.discussion-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('.discussion-stats')) {
+                        const discussionTitle = card.querySelector('h4').textContent;
+                        console.log('Viewing discussion:', discussionTitle);
+                    }
+                });
+            });
+
+            // Contributor cards
+            document.querySelectorAll('.contributor-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const contributorName = card.querySelector('h4').textContent;
+                    console.log('Viewing contributor:', contributorName);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
